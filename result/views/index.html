@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html ng-app="catsvsdogs">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Result</title>
+    <base href="/index.html">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name="keywords" content="docker-compose, docker, stack">
+    <meta name="author" content="Docker">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body ng-controller="statsCtrl" >
+     <div id="background-stats">
+       <div id="background-stats-1">
+       </div><!--
+      --><div id="background-stats-2">
+      </div>
+    </div>
+    <div id="content-container">
+      <div id="content-container-center">
+        <div id="choice">
+          <div class="choice cats">
+            <div class="label">Final Result</div>
+            <div class="stat"></div>
+          </div>
+          <div class="divider"></div>
+          <div class="choice dogs">
+            <div class="label">Score out of 100 = </div>
+            <div class="stat">{{total}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="socket.io.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
